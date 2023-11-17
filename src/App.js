@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
+import Cart from './Cart';
+import  './Grocery.jpg';
+
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <Cart/>
+      <footer style={{ color: '#e0e0e0'}}> 
+      <h5>Please select the items, to add 'em into the cart. To remove an item, shoot at that item on the list.</h5>
+      </footer>
     </div>
+
   );
 }
 
